@@ -1,0 +1,187 @@
+/*Aurthor harry styles*/
+body, header, h1, nav, main, footer, div, img, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background-color: #ccc;
+}
+/*style rules for mobile viewpoint*/
+header{
+/*	position: -webkit-sticky;*/
+	position: sticky;
+	top: 0;
+	background-color: #000;
+	height: 190px;
+}
+
+header img{
+	margin: 0 auto;
+}
+
+nav{
+	padding: 1%;
+	margin-bottom: 1%;
+	/*width: 70%;
+	float: right;
+	margin: 5em 3em 0 0;*/
+}
+main {
+clear: left; /* clears a float to the left */
+}
+
+nav ul {
+	list-style-type: none;
+/*	margin 0;*/
+	text-align: center;
+
+}
+nav li{
+	display: inline-block;
+	font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
+	border-top: 1px solid #fff;
+}
+nav li a{
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+li:hover{
+	background-color: blue;
+}
+
+div .footer{
+	padding-top: 2px;
+	text-align: center;
+	height: 200px;
+  	width: 100%;
+	background-color: #4c524e;
+}
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+display: block;
+/*text-align: center;*/
+}
+
+.tablet-desktop {
+display: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+		}
+		.mobile {
+		display: none;
+		}
+
+		/* Tablet Viewport: Style rule for header */
+		header {
+		position: static;
+		padding-bottom: 2%;
+		}
+
+		/* Tablet Viewport: Style rules for nav area */
+		nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+		}
+		nav li:last-child {
+		border-right: none;
+		}
+		nav li a {
+		padding: 0.1em 0.75em;
+		}
+}/* Media Query for Tablet Viewport closing braces*/
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+	/* Desktop Viewport: Style rule for header */
+	header {
+	width: 25%;
+	float: left;
+	padding-bottom: 0;
+	}
+
+	/* Desktop Viewport: Style rules for nav area */
+	nav {
+	float: right;
+	width: 70%;
+	margin: 4em 1em 0 0;
+	}
+	nav ul {
+	text-align: right;
+	}
+	nav li {
+	border: none;
+	}
+	nav li a {
+	padding: 0.5em 1em;
+	}
+
+	nav ul {
+	text-align: right;
+	}
+	nav li {
+	border: none;
+	}
+	nav li a {
+	padding: 0.5em 1em;
+	}
+
+	/* Desktop Viewport: style rule for main content */
+	main {
+	clear: left;
+	}
+	main h1 {
+	font-size: 1.8em;
+	}
+
+	#weights, #cardio, #training
+	{
+	width: 29%;
+	float: left;
+	margin: 0 2%;
+	}
+	#exercises {
+	clear: left;
+	}
+}/* Media Query for desktop Viewport closing braces */
+
+
+.tel-link {
+background-color: #404040;
+padding: 2%;
+margin: 0 auto;
+width: 80%;
+text-align: center;
+border-radius: 5px;
+}
+
+.tel-link a {
+color: #fff;
+text-decoration: none;
+font-size: 1.5em;
+display: block;
+}
+.hours {
+margin-left: 10%;
+}
+.round {
+border-radius: 8px;
+}
+#weights, #cardio, #training {
+	margin: 0 2%;
+ }
